@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f1f1f1;
+            margin: 0;
+            padding: 20px 0;
+        }
+
+        .title-box {
+            width: 90%;
+            margin: auto;
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+            color: #4a4a4a;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .form-box {
+            width: 90%;
+            margin: auto;
+            background: linear-gradient(to right, #c11df0, #f8a8d8);
+            padding: 20px;
+            border-radius: 12px;
+            color: #333;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        h2 {
+            text-align: center;
+            color: white;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+            color: white;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: none;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
+        .row {
+            display: flex;
+            gap: 10px;
+        }
+
+        .row div {
+            flex: 1;
+        }
+
+        .checkbox-group label {
+            display: inline-block;
+            margin-right: 15px;
+            color: white;
+        }
+
+        table {
+            width: 100%;
+            background: white;
+            border-radius: 8px;
+            margin-top: 10px;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        table input {
+            width: 90%;
+            padding: 5px;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+
+        .button-row {
+            text-align: right;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        .reset-btn {
+            background: #e0e0e0;
+        }
+
+        .submit-btn {
+            background: #b708f5;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="title-box">Modern Registration Form</div>
+
+    <div class="form-box">
+        <h2>Student Registration Form</h2>
+
+        <div class="row">
+            <div>
+                <label>First Name</label>
+                <input type="text" placeholder="Enter first name">
+            </div>
+
+            <div>
+                <label>Last Name</label>
+                <input type="text" placeholder="Enter last name">
+            </div>
+        </div>
+
+        <label>Date of Birth</label>
+        <div class="row">
+            <div>
+                <select>
+                    <option>Day</option>
+                </select>
+            </div>
+            <div>
+                <select>
+                    <option>Month</option>
+                </select>
+            </div>
+            <div>
+                <select>
+                    <option>Year</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div>
+                <label>Email ID</label>
+                <input type="email" placeholder="Enter email address">
+            </div>
+
+            <div>
+                <label>Mobile Number</label>
+                <input type="number" placeholder="Enter 10-digit mobile number">
+            </div>
+        </div>
+
+        <label>Gender</label>
+        <label style="display:inline;"><input type="radio" name="g"> Male</label>
+        <label style="display:inline;"><input type="radio" name="g"> Female</label>
+
+        <label>Address</label>
+        <input type="text" placeholder="Enter full address">
+
+        <div class="row">
+            <div>
+                <label>City</label>
+                <input type="text" placeholder="Enter city">
+            </div>
+            <div>
+                <label>PIN Code</label>
+                <input type="number" placeholder="Enter PIN code">
+            </div>
+            <div>
+                <label>State</label>
+                <input type="text" placeholder="Enter state">
+            </div>
+        </div>
+
+        <label>Country</label>
+        <select>
+            <option>Select country</option>
+        </select>
+
+        <label>Hobbies</label>
+        <div class="checkbox-group">
+            <label><input type="checkbox"> Drawing</label>
+            <label><input type="checkbox"> Singing</label>
+            <label><input type="checkbox"> Dancing</label>
+            <label><input type="checkbox"> Sketching</label>
+            <label><input type="checkbox"> Others</label>
+        </div>
+
+        <label>Qualification</label>
+
+        <table border="1">
+            <tr>
+                <th>Sr. No.</th>
+                <th>Examination</th>
+                <th>Board</th>
+                <th>Percentage</th>
+                <th>Year of Passing</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Class X</td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Class XII</td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Graduation</td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>Masters</td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+        </table>
+
+        <label>Courses Applied For</label>
+        <label><input type="radio" name="c"> BCA</label>
+        <label><input type="radio" name="c"> B.Com</label>
+        <label><input type="radio" name="c"> B.Sc</label>
+        <label><input type="radio" name="c"> B.A</label>
+
+        <div class="button-row">
+            <button class="reset-btn">Reset</button>
+            <button class="submit-btn">Submit</button>
+        </div>
+
+    </div> <!-- closes inner container -->
+</div> <!-- closes main student registration form box -->
+
+<!-- Professional Registration Form Section -->
+<div class="professional-section">
+    <h2>Professional Registration Form</h2>
+</div>
+
+
+</body>
+</html>
+</body>
+</html>
